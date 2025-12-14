@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/dashboard/layout,_N_T_/dashboard/pest-detection/layout,_N_T_/dashboard/pest-detection/page,_N_T_/dashboard/pest-detection"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/dashboard/pest-detection/__PAGE__",
+    "/dashboard/pest-detection",
+    "/dashboard",
+    "/_index",
+    "/_head"
+  ]
+}

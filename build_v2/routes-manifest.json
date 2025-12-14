@@ -1,0 +1,293 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/community/posts/[id]",
+      "regex": "^/api/community/posts/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/community/posts/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/community/posts/[id]/comment",
+      "regex": "^/api/community/posts/([^/]+?)/comment(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/community/posts/(?<nxtPid>[^/]+?)/comment(?:/)?$"
+    },
+    {
+      "page": "/api/community/posts/[id]/like",
+      "regex": "^/api/community/posts/([^/]+?)/like(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/community/posts/(?<nxtPid>[^/]+?)/like(?:/)?$"
+    },
+    {
+      "page": "/api/messages/[id]",
+      "regex": "^/api/messages/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/messages/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/analyze-crop",
+      "regex": "^/api/analyze\\-crop(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/analyze\\-crop(?:/)?$"
+    },
+    {
+      "page": "/api/analyze-soil",
+      "regex": "^/api/analyze\\-soil(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/analyze\\-soil(?:/)?$"
+    },
+    {
+      "page": "/api/analyze-weather-impact",
+      "regex": "^/api/analyze\\-weather\\-impact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/analyze\\-weather\\-impact(?:/)?$"
+    },
+    {
+      "page": "/api/auth/otp/send",
+      "regex": "^/api/auth/otp/send(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/otp/send(?:/)?$"
+    },
+    {
+      "page": "/api/auth/otp/verify",
+      "regex": "^/api/auth/otp/verify(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/otp/verify(?:/)?$"
+    },
+    {
+      "page": "/api/community/posts",
+      "regex": "^/api/community/posts(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/community/posts(?:/)?$"
+    },
+    {
+      "page": "/api/community/posts/comment",
+      "regex": "^/api/community/posts/comment(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/community/posts/comment(?:/)?$"
+    },
+    {
+      "page": "/api/market-price",
+      "regex": "^/api/market\\-price(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/market\\-price(?:/)?$"
+    },
+    {
+      "page": "/api/messages",
+      "regex": "^/api/messages(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/messages(?:/)?$"
+    },
+    {
+      "page": "/api/news",
+      "regex": "^/api/news(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/news(?:/)?$"
+    },
+    {
+      "page": "/api/reports/generate",
+      "regex": "^/api/reports/generate(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/reports/generate(?:/)?$"
+    },
+    {
+      "page": "/api/store/order/create",
+      "regex": "^/api/store/order/create(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/store/order/create(?:/)?$"
+    },
+    {
+      "page": "/api/store/order/verify",
+      "regex": "^/api/store/order/verify(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/store/order/verify(?:/)?$"
+    },
+    {
+      "page": "/api/store/products",
+      "regex": "^/api/store/products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/store/products(?:/)?$"
+    },
+    {
+      "page": "/api/user/follow",
+      "regex": "^/api/user/follow(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/user/follow(?:/)?$"
+    },
+    {
+      "page": "/api/user/profile",
+      "regex": "^/api/user/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/user/profile(?:/)?$"
+    },
+    {
+      "page": "/api/users",
+      "regex": "^/api/users(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/users(?:/)?$"
+    },
+    {
+      "page": "/dashboard",
+      "regex": "^/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard(?:/)?$"
+    },
+    {
+      "page": "/dashboard/community",
+      "regex": "^/dashboard/community(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/community(?:/)?$"
+    },
+    {
+      "page": "/dashboard/market-price",
+      "regex": "^/dashboard/market\\-price(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/market\\-price(?:/)?$"
+    },
+    {
+      "page": "/dashboard/pest-detection",
+      "regex": "^/dashboard/pest\\-detection(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/pest\\-detection(?:/)?$"
+    },
+    {
+      "page": "/dashboard/profile",
+      "regex": "^/dashboard/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/profile(?:/)?$"
+    },
+    {
+      "page": "/dashboard/reports",
+      "regex": "^/dashboard/reports(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/reports(?:/)?$"
+    },
+    {
+      "page": "/dashboard/schemes",
+      "regex": "^/dashboard/schemes(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/schemes(?:/)?$"
+    },
+    {
+      "page": "/dashboard/soil-analysis",
+      "regex": "^/dashboard/soil\\-analysis(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/soil\\-analysis(?:/)?$"
+    },
+    {
+      "page": "/dashboard/store",
+      "regex": "^/dashboard/store(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/store(?:/)?$"
+    },
+    {
+      "page": "/dashboard/weather",
+      "regex": "^/dashboard/weather(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/weather(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/privacy",
+      "regex": "^/privacy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy(?:/)?$"
+    },
+    {
+      "page": "/signup",
+      "regex": "^/signup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/signup(?:/)?$"
+    },
+    {
+      "page": "/terms",
+      "regex": "^/terms(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/terms(?:/)?$"
+    },
+    {
+      "page": "/verify-order",
+      "regex": "^/verify\\-order(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/verify\\-order(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

@@ -1,0 +1,3 @@
+{
+  "/api/analyze-weather-impact/route": "app/api/analyze-weather-impact/route.js"
+}

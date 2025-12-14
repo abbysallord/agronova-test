@@ -1,0 +1,11 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_global-error/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0f7975e2._.js")
+R.c("server/chunks/ssr/agronova_e1f50c0d._.js")
+R.c("server/chunks/ssr/45d0c_next_dist_224baf84._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__ce7aed67._.js")
+R.c("server/chunks/ssr/45d0c_71680edf._.js")
+R.c("server/chunks/ssr/45d0c_next_dist_7248216b._.js")
+R.c("server/chunks/ssr/agronova_app_e22f4cdb._.js")
+R.c("server/chunks/ssr/agronova__next-internal_server_app__global-error_page_actions_f135c155.js")
+R.m(32725)
+module.exports=R.m(32725).exports

@@ -1,0 +1,274 @@
+[00:00:02.796] Server  LOG      ✓ Ready in 2s
+[00:00:16.297] Server  LOG      ○ Compiling / ...
+[00:00:19.794] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:20.093] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:20.093] Browser WARN    Image with src "/images/dashboard/soil-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:20.093] Browser WARN    Image with src "/images/dashboard/market-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:20.093] Browser WARN    Image with src "/images/dashboard/weather-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:20.093] Browser WARN    Image with src "/images/dashboard/store-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:34.068] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:02:15.742] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:34.822] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:02:34.822] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:34.822] Browser WARN    Image with src "/images/dashboard/market-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:34.822] Browser WARN    Image with src "/images/dashboard/soil-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:34.822] Browser WARN    Image with src "/images/dashboard/weather-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:34.822] Browser WARN    Image with src "/images/dashboard/store-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:01.989] Server  LOG     ✅  Email sent to dhanush.shenoy.h20@gmail.com
+[00:04:53.448] Server  LOG     ✅  Email sent to dhanush.shenoy.h20@gmail.com
+[00:08:04.856] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:51.489] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:03.058] Server  LOG     Fetching Gov API for ginger in Uttar Pradesh...
+[00:11:03.528] Server  WARN    Gov API returned no records. Switching to AI.
+[00:11:03.531] Server  LOG     Searching Web: "current market price of ginger in Uttar Pradesh today latest news agriculture"
+[00:11:04.726] Server  LOG     Search Context: 0 "results. Top Source:" ""
+[00:11:18.361] Server  LOG     Fetching Gov API for ginger in Uttar Pradesh...
+[00:11:19.277] Server  WARN    Gov API returned no records. Switching to AI.
+[00:11:19.279] Server  LOG     Searching Web: "current market price of ginger in Uttar Pradesh today latest news agriculture"
+[00:11:21.293] Server  LOG     Search Context: 0 "results. Top Source:" ""
+[00:12:18.953] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:57.977] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:27.417] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:28.959] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:04.336] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:06.347] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:08.760] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:21:37.479] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:12.843] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:18.672] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:18.932] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:24:18.932] Browser WARN    Image with src "/images/dashboard/soil-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:24:22.031] Browser WARN    Image with src "/images/dashboard/market-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:24:22.031] Browser WARN    Image with src "/images/dashboard/weather-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:24:22.031] Browser WARN    Image with src "/images/dashboard/store-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:24:54.687] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:25:19.596] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:49.412] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:53.474] Server  LOG      ✓ Compiled in 1686ms
+[00:26:12.120] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:22.045] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:29.324] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:47.603] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:14.059] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:23.258] Server  LOG     [DB] Creating post. Current count: 1
+[00:27:23.266] Server  LOG     [DB] Post created. New count: 2
+[00:31:33.290] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:35.329] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:37.348] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:53.769] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:26.026] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:14.070] Server  LOG      ✓ Compiled in 1918ms
+[00:41:04.374] Server  LOG      ✓ Compiled in 958ms
+[00:41:23.735] Server  LOG      ✓ Compiled in 1506ms
+[00:46:12.827] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:13.581] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:52:56.149] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:56.161] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:56.245] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:56.248] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:56.397] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:56.398] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:56.480] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:56.481] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:56.646] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:56.662] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:56.766] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:56.769] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:56.879] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:56.881] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:56.953] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:56.956] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:57.065] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:57.067] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:57.144] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:57.145] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:57.247] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:57.248] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:57.323] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:57.324] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:57.419] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:57.420] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:57.483] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:57.484] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:57.577] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:57.579] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:57.649] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:57.650] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:57.738] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:57.740] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:57.817] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:57.818] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:57.918] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:57.920] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:58.009] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:58.011] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:58.092] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:58.094] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:58.167] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:58.168] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:58.250] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:58.251] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:58.333] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:58.334] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:58.428] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:58.429] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:52:58.500] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__a3cf43c6._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:58.503] Server  ERROR    ⨯ ReferenceError: ThemeProvider is not defined
+[00:53:01.032] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__c4ded613._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:53:01.033] Server  ERROR    ⨯ ReferenceError: props is not defined
+[00:53:01.218] Server  LOG      ✓ Compiled in 2.5s
+[00:53:01.261] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__c4ded613._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:53:01.263] Server  ERROR    ⨯ ReferenceError: props is not defined
+[00:53:01.490] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__c4ded613._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:53:01.491] Server  ERROR    ⨯ ReferenceError: props is not defined
+[00:53:02.105] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:53:02.483] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:53:02.746] Browser ERROR   uncaughtError: ReferenceError: props is not defined
+[00:53:03.034] Browser ERROR   uncaughtError: ReferenceError: props is not defined
+[00:54:12.162] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:54:12.164] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:54:12.166] Server  LOG      ✓ Compiled in 1468ms
+[00:54:12.910] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__c4ded613._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:54:12.912] Server  ERROR    ⨯ ReferenceError: props is not defined
+[00:54:13.061] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:54:13.062] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__30b8ce59._.css
+[00:54:13.102] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\[root-of-the-server]__c4ded613._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:54:13.104] Server  ERROR    ⨯ ReferenceError: props is not defined
+[00:54:13.719] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:54:13.805] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:54:13.874] Browser ERROR   uncaughtError: ReferenceError: props is not defined
+[00:54:14.742] Browser ERROR   uncaughtError: ReferenceError: props is not defined
+[01:17:02.857] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:17:02.859] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./agronova/components/theme-provider.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:17:02.860] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:17:02.862] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:17:02.862] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./agronova/components/theme-provider.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:17:02.863] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:17:02.885] Server  LOG      ✓ Compiled in 403ms
+[01:17:03.511] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:17:03.530] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:17:05.046] Server  LOG      ✓ Compiled in 445ms
+[01:18:40.648] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:18:43.752] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:18:45.749] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:18:51.585] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:18:51.809] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:18:51.809] Browser WARN    Image with src "/images/dashboard/soil-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:18:51.890] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:18:53.770] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:18:56.848] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:18:58.399] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:19:00.160] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:19:02.187] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:19:04.275] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:19:05.858] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:20:21.990] Server  LOG     [API] DELETE Post Request: id=1765686005595, userEmail=dhanush.shenoy.h20@gmail.com
+[01:20:21.991] Server  LOG     [DB] Request Delete Post 1765686005595 by dhanush.shenoy.h20@gmail.com
+[01:20:21.992] Server  LOG     [DB] Found Post. Owner: dhanush.shenoy.h20@gmail.com, Requestor: dhanush.shenoy.h20@gmail.com
+[01:20:21.993] Server  LOG     [DB] Writing 1 posts to file.
+[01:20:21.994] Server  LOG     [API] Delete result: true
+[01:21:59.429] Server  LOG      ✓ Compiled in 1964ms
+[01:22:15.270] Server  LOG      ✓ Compiled in 254ms
+[01:22:15.777] Browser ERROR   uncaughtError: ReferenceError: ThemeToggle is not defined
+[01:22:16.266] Browser ERROR   uncaughtError: ReferenceError: ThemeToggle is not defined
+[01:22:16.997] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:22:16.999] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:22:17.234] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:22:17.236] Server  LOG      ✓ Compiled in 296ms
+[01:22:17.567] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:17.568] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:18.902] Server  LOG      ✓ Compiled in 305ms
+[01:22:19.785] Browser ERROR   uncaughtError: ReferenceError: ThemeToggle is not defined
+[01:22:19.914] Browser ERROR   uncaughtError: ReferenceError: ThemeToggle is not defined
+[01:22:20.422] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:22:20.422] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:22:20.618] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\agronova_app_dashboard_community_page_tsx_3547e71e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:22:20.618] Server  ERROR    ⨯ ReferenceError: useTheme is not defined
+[01:22:20.632] Server  LOG      ✓ Compiled in 240ms
+[01:22:20.676] Server  ERROR   C:\Users\Dhanush\agronova\build_v2\dev\server\chunks\ssr\agronova_app_dashboard_community_page_tsx_3547e71e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:22:20.676] Server  ERROR    ⨯ ReferenceError: useTheme is not defined
+[01:22:20.812] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:20.838] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:21.771] Browser ERROR   uncaughtError: ReferenceError: useTheme is not defined
+[01:22:21.824] Browser ERROR   uncaughtError: ReferenceError: useTheme is not defined
+[01:22:22.812] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:22:22.813] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:22:22.820] Server  LOG      ✓ Compiled in 237ms
+[01:22:23.155] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:23.175] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:23:08.673] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:23:08.929] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:23:08.929] Browser WARN    Image with src "/images/dashboard/soil-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:23:08.929] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:23:13.377] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:23:13.539] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:23:13.539] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:23:13.539] Browser WARN    Image with src "/images/dashboard/soil-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:23:43.126] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:23:43.230] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:23:43.230] Browser WARN    Image with src "/images/dashboard/soil-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:23:43.230] Browser WARN    Image with src "/images/dashboard/market-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:23:43.230] Browser WARN    Image with src "/images/dashboard/weather-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:23:43.230] Browser WARN    Image with src "/images/dashboard/store-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:23:48.078] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:23:52.063] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:26:01.372] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:28:47.182] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:28:49.642] Server  LOG     Fetching Gov API for mhg in All States...
+[01:28:50.076] Server  WARN    Gov API returned no records. Switching to AI.
+[01:28:50.077] Server  LOG     Searching Web: "current market price of mhg across major Indian states today latest news agriculture"
+[01:28:51.148] Server  LOG     Search Context: 0 "results. Top Source:" ""
+[01:29:07.029] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:12.370] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:25.520] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:27.746] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:27.912] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:27.912] Browser WARN    Image with src "/images/dashboard/soil-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:28.027] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:29:43.443] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:09.210] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:33.105] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:30:33.105] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:33.105] Browser WARN    Image with src "/images/dashboard/soil-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:33.105] Browser WARN    Image with src "/images/dashboard/market-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:33.105] Browser WARN    Image with src "/images/dashboard/store-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:33.105] Browser WARN    Image with src "/images/dashboard/weather-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:32.751] Server  LOG      ✓ Compiled in 1430ms
+[01:34:07.983] Server  LOG      ✓ Compiled in 431ms
+[01:34:55.951] Server  LOG      ✓ Compiled in 464ms
+[01:38:50.928] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:38:53.351] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:38:56.463] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:38:59.969] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:39:02.615] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:39:04.331] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:39:22.278] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:39:53.577] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:40:00.962] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:40:02.864] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:40:21.399] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:40:26.890] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:40:27.132] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:40:27.133] Browser WARN    Image with src "/images/dashboard/soil-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:40:27.133] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:42:05.085] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:42:08.878] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:42:08.878] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:42:08.878] Browser WARN    Image with src "/images/dashboard/soil-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:42:13.297] Browser WARN    Image with src "/images/dashboard/store-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:42:13.297] Browser WARN    Image with src "/images/dashboard/market-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:42:13.297] Browser WARN    Image with src "/images/dashboard/weather-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:42:23.411] Server  LOG      ✓ Compiled in 1407ms
+[01:42:24.144] Server  LOG      ✓ Compiled in 446ms
+[01:45:19.748] Server  LOG      ✓ Compiled in 575ms
+[01:45:35.869] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:45:36.079] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:45:36.079] Browser WARN    Image with src "/images/dashboard/pest-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:45:36.079] Browser WARN    Image with src "/images/dashboard/soil-mockup.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:45:36.160] Server  LOG      ✓ Compiled in 570ms

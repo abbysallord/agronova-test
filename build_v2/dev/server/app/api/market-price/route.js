@@ -1,0 +1,13 @@
+var R=require("../../../chunks/[turbopack]_runtime.js")("server/app/api/market-price/route.js")
+R.c("server/chunks/45d0c_next_86f69d51._.js")
+R.c("server/chunks/45d0c_@mistralai_mistralai_models_components_c3bf7416._.js")
+R.c("server/chunks/45d0c_@mistralai_mistralai_models_operations_b6e251e4._.js")
+R.c("server/chunks/45d0c_@mistralai_mistralai_models_errors_26315ab1._.js")
+R.c("server/chunks/45d0c_@mistralai_mistralai_funcs_1d03a0af._.js")
+R.c("server/chunks/45d0c_@mistralai_mistralai_45f12148._.js")
+R.c("server/chunks/45d0c_eb6a6925._.js")
+R.c("server/chunks/45d0c_zod-to-json-schema_dist_cjs_8ff6c4c8._.js")
+R.c("server/chunks/[root-of-the-server]__d5028fe5._.js")
+R.c("server/chunks/agronova__next-internal_server_app_api_market-price_route_actions_1fba0d77.js")
+R.m("[project]/agronova/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/agronova/app/api/market-price/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)")
+module.exports=R.m("[project]/agronova/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/agronova/app/api/market-price/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)").exports

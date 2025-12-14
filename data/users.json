@@ -1,0 +1,61 @@
+[
+  {
+    "email": "ramesh@farm.com",
+    "strikes": [],
+    "status": "CLEAR",
+    "name": "Ramesh Kumar",
+    "role": "Expert Farmer",
+    "followers": [
+      "alice@example.com",
+      "dhanush.shenoy.h20@gmail.com"
+    ],
+    "following": []
+  },
+  {
+    "email": "suresh@agri.com",
+    "strikes": [],
+    "status": "CLEAR",
+    "name": "Suresh Patel",
+    "role": "Agronomist",
+    "followers": [
+      "dhanush.shenoy.h20@gmail.com"
+    ],
+    "following": []
+  },
+  {
+    "email": "anita@dairy.com",
+    "strikes": [],
+    "status": "CLEAR",
+    "name": "Anita Devi",
+    "role": "Dairy Expert",
+    "followers": [
+      "dhanush.shenoy.h20@gmail.com"
+    ],
+    "following": []
+  },
+  {
+    "email": "vikram@seeds.com",
+    "strikes": [],
+    "status": "CLEAR",
+    "name": "Vikram Singh",
+    "role": "Seed Supplier",
+    "followers": [
+      "dhanush.shenoy.h20@gmail.com"
+    ],
+    "following": []
+  },
+  {
+    "email": "dhanush.shenoy.h20@gmail.com",
+    "strikes": [],
+    "status": "CLEAR",
+    "name": "dhanush.shenoy.h20",
+    "role": "Farmer",
+    "followers": [],
+    "following": [
+      "suresh@agri.com",
+      "anita@dairy.com",
+      "vikram@seeds.com",
+      "ramesh@farm.com"
+    ]
+  }
+]

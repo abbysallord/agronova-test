@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌱 AgroNova - The Future of Smart Farming
 
-## Getting Started
+AgroNova is a comprehensive digital ecosystem designed to empower farmers with AI-driven insights, direct market access, and a thriving community. It bridges the gap between technology and agriculture, ensuring farmers get the best value for their produce and labor.
 
-First, run the development server:
+![AgroNova Dashboard](public/images/dashboard/pest-mockup.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🌾 **Farm Intelligence Dashboard**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Hyper-Local Weather**: Real-time accurate weather forecasts with crop-specific advisories.
+- **Soil Health Analysis**: Upload soil reports to get detailed NPK and pH breakdown with remediation tips.
+- **Pest Detection AI**: Instant disease identification by uploading crop photos, powered by advanced computer vision.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🏪 **Agri Store Pro**
 
-## Learn More
+- **Direct-to-Consumer Marketplace**: Farmers can list produce directly, setting their own prices.
+- **Secure Checkout**: Integrated checkout flow with Location GPS and UPI payment verification.
+- **Zero Middlemen**: 100% of the profit goes to the farmer.
 
-To learn more about Next.js, take a look at the following resources:
+### 💬 **Farmer's Community**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Social Feed**: Share updates, photos, and success stories with fellow farmers.
+- **Network & Connect**: Follow experts, message peers, and build your agricultural network.
+- **Discussion Forums**: Ask questions and get advice from the community.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📊 **Reports & Analytics**
 
-## Deploy on Vercel
+- **Yield Forecasting**: AI-predicted yield estimates based on farm size and crop data.
+- **Financial Projections**: Revenue and profit estimation to help plan the season.
+- **Smart Recommendations**: Tailored tips to improve productivity.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **UI Components**: Custom clean UI + Tabler Icons
+- **Animations**: Framer Motion
+- **State Management**: React Context (Auth)
+- **Database**: JSON-based local persistence (MVP) / scalable to Postgres/MongoDB.
+
+## 🏁 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or bun
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/agronova.git
+   cd agronova
+   ```
+
+2. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run Development Server**
+
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) to view the app.
+
+4. **Build for Production**
+   ```bash
+   npm run build
+   npm start
+   ```
+
+## 🌍 Deployment
+
+This project is optimized for deployment on **Vercel**.
+
+1. Push code to GitHub.
+2. Import repository in Vercel.
+3. Deploy! (No complex config required).
+
+## 🤝 Contributing
+
+We welcome contributions to help Indian farmers! Please fork the repo and submit a PR.
+
+## 📜 License
+
+MIT License © 2024 AgroNova

@@ -1,0 +1,3 @@
+module.exports=[46046,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(46757);a.n(d("[project]/agronova/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},23026,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(46757);a.n(d("[project]/agronova/node_modules/next/dist/client/components/builtin/global-error.js"))},4137,a=>{"use strict";a.i(46046);var b=a.i(23026);a.n(b)}];
+
+//# sourceMappingURL=45d0c_next_dist_client_components_builtin_global-error_e1654c13.js.map
