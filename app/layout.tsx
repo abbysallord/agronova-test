@@ -22,7 +22,7 @@ export const metadata = {
     siteName: 'AgroNova',
     images: [
       {
-        url: '/og-image.jpg', // Must match the file name in your public folder
+        url: '@/public/og-image.jpg', // Must match the file name in your public folder
         width: 1200,
         height: 630,
         alt: 'AgroNova Dashboard Preview',
