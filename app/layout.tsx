@@ -12,10 +12,25 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "AgroNova - Empowering Indian Farmers",
-  description:
-    "A comprehensive platform for Indian farmers featuring pest detection, soil analysis, weather updates, and market prices.",
+export const metadata = {
+  title: 'AgroNova | Smart Farming for a Better Future',
+  description: 'Empowering Indian farmers with AI-driven insights, pest detection, and real-time market prices.',
+  openGraph: {
+    title: 'AgroNova | Smart Farming for a Better Future',
+    description: 'Empowering Indian farmers with AI-driven insights, pest detection, and real-time market prices.',
+    url: 'https://agronova-app.vercel.app',
+    siteName: 'AgroNova',
+    images: [
+      {
+        url: '/og-image.jpg', // Must match the file name in your public folder
+        width: 1200,
+        height: 630,
+        alt: 'AgroNova Dashboard Preview',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 import { AuthProvider } from "@/context/AuthContext";
