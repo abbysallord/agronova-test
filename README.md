@@ -67,7 +67,7 @@ AgroNova is a comprehensive digital ecosystem designed to empower farmers with A
    npm run dev
    ```
 
-   Open [http://localhost:3000](http://localhost:3000) to view the app.
+   Open [https://agronova-app.vercel.app](https://agronova-app.vercel.app) to view the app.
 
 4. **Build for Production**
    ```bash
