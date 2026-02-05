@@ -84,7 +84,6 @@ export const FeaturesSection = () => {
 
     mm.add("(min-width: 1024px)", () => {
       // 1. Horizontal Scroll
-      // Note: No scrubbing logic for cards attached here. Just the movement.
       const scrollTween = gsap.to(trackRef.current, {
         translateX: "-350vw",
         ease: "none",
@@ -96,44 +95,34 @@ export const FeaturesSection = () => {
           pin: true,
           onUpdate: (self) => {
             // MANUAL ANIMATION LOOP
-            // This runs every time scroll updates, ensuring perfect sync.
-
             const center = window.innerWidth / 2;
 
             cardsRef.current.forEach((card) => {
               if (!card) return;
 
-              // Get absolute position of the card
+              // Force visibility visible in case it got stuck (Firefox Fix)
+              if (card.style.visibility === "hidden") {
+                card.style.visibility = "visible";
+              }
+
               const rect = card.getBoundingClientRect();
               const cardCenter = rect.left + rect.width / 2;
-
-              // Calculate distance from center
               const distance = Math.abs(center - cardCenter);
-              const maxDistance = window.innerWidth / 2; // Distance where effect maxes out (edge of screen)
+              const maxDistance = window.innerWidth / 2;
 
-              // Normalize distance (0 at center, 1 at edge)
               let progress = distance / maxDistance;
-              progress = Math.min(Math.max(progress, 0), 1); // Clamp 0-1
-
-              // Interpolate Values
-              // Close to center (progress 0) -> Scale 1.0, Blur 0
-              // Far from center (progress 1) -> Scale 0.85, Blur 10
+              progress = Math.min(Math.max(progress, 0), 1);
 
               const scale = gsap.utils.interpolate(1.0, 0.85, progress);
               const opacity = gsap.utils.interpolate(1, 0.5, progress);
-              const blur = gsap.utils.interpolate(0, 10, progress); // Linear blur 0-10px
+              const blur = gsap.utils.interpolate(0, 10, progress);
 
-              // Parallax Icon
-              // Center -> 0, Edge -> 50px offset based on direction
-              // We need signed distance for direction
               const signedDist = cardCenter - center;
               const parallaxX = (signedDist / maxDistance) * 50;
 
-              // Apply efficiently
               gsap.set(card, {
                 scale: scale,
-                autoAlpha: opacity,
-                filter: `blur(${blur}px)`,
+                opacity: opacity,
               });
 
               const icon = card.querySelector(".feature-icon");
@@ -148,10 +137,9 @@ export const FeaturesSection = () => {
 
     // Mobile
     mm.add("(max-width: 1023px)", () => {
-      // Reset styles imposed by desktop loop if any (though matchMedia handles revert usually)
       cardsRef.current.forEach((card) => {
         if (!card) return;
-        gsap.set(card, { clearProps: "all" });  // Critical cleanup
+        gsap.set(card, { clearProps: "all" });
 
         gsap.from(card, {
           y: 50,
@@ -195,10 +183,10 @@ export const FeaturesSection = () => {
             className="w-full lg:h-full lg:w-[45vw] flex items-center justify-center p-4 py-8 lg:p-12 relative group shrink-0"
           >
             <div className={cn(
-              "relative w-full max-w-md lg:max-w-xl p-8 lg:p-12 rounded-3xl border border-white/10 bg-black/40 backdrop-blur-xl transition-all duration-300 overflow-hidden will-change-transform", // Reduced duration to avoid conflict with GSAP set
+              "relative w-full max-w-md lg:max-w-xl p-8 lg:p-12 rounded-3xl border border-white/10 bg-black/40 backdrop-blur-xl transition-all duration-300 overflow-hidden opacity-100 visible", // Force visible via CSS
               feature.border
             )}
-              style={{ willChange: "transform, filter, opacity" }} // Hardware Hint
+              style={{ opacity: 1, visibility: 'visible' }} // Inline style safety net
             >
               <div
                 className={cn(
