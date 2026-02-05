@@ -32,7 +32,7 @@ export const HeroSection = () => {
         <div className="absolute inset-0 bg-transparent" />
       </div>
 
-      <div className="container mx-auto px-4 md:px-10 flex-grow flex items-center relative z-10 pt-32 lg:pt-0">
+      <div className="container mx-auto px-4 md:px-10 flex-grow flex items-center relative z-10 pt-32 lg:pt-28">
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
