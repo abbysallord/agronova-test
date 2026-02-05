@@ -39,20 +39,49 @@
   --animate-aurora: aurora 60s linear infinite;
 
   @keyframes accordion-down {
-    from { height: 0; }
-    to { height: var(--radix-accordion-content-height); }
+    from {
+      height: 0;
+    }
+
+    to {
+      height: var(--radix-accordion-content-height);
+    }
   }
+
   @keyframes accordion-up {
-    from { height: var(--radix-accordion-content-height); }
-    to { height: 0; }
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+
+    to {
+      height: 0;
+    }
   }
+
   @keyframes scroll {
-    to { transform: translate(calc(-50% - 0.5rem)); }
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
   }
+
   @keyframes aurora {
-    from { background-position: 50% 50%, 50% 50%; }
-    to { background-position: 350% 50%, 350% 50%; }
+    from {
+      background-position: 50% 50%, 50% 50%;
+    }
+
+    to {
+      background-position: 350% 50%, 350% 50%;
+    }
   }
+
+  --font-sans: var(--font-montserrat),
+  ui-sans-serif,
+  system-ui,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji";
 }
 
 @layer base {
@@ -78,6 +107,11 @@
     --ring: 0 0% 3.9%;
     --radius: 0.5rem;
   }
+
+  body {
+    font-family: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -105,9 +139,11 @@
   * {
     @apply border-border;
   }
+
   html {
     scroll-behavior: smooth;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -117,8 +153,11 @@
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
   .no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
   }
 }
