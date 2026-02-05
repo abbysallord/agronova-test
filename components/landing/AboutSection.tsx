@@ -5,7 +5,7 @@ import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
 
 export const AboutSection = () => {
     return (
-        <section id="about" className="py-20 bg-neutral-100 dark:bg-neutral-900">
+        <section id="about" className="py-20 bg-transparent">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl font-bold tracking-tight text-neutral-900 dark:text-white sm:text-5xl">
@@ -19,8 +19,8 @@ export const AboutSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Card 1: Mission */}
                     <CardContainer className="inter-var">
-                        <CardBody className="bg-white dark:bg-black relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border  ">
-                             <CardItem translateZ="100" className="w-full mt-4">
+                        <CardBody className="bg-neutral-950/60 backdrop-blur-md relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-white/[0.1] w-full h-auto rounded-xl p-6 border  ">
+                            <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
                                     src="/images/mission.png"
                                     height="1000"
@@ -46,9 +46,9 @@ export const AboutSection = () => {
                     </CardContainer>
 
                     {/* Card 2: Vision */}
-                     <CardContainer className="inter-var">
-                        <CardBody className="bg-white dark:bg-black relative group/card  dark:hover:shadow-2xl dark:hover:shadow-amber-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border  ">
-                             <CardItem translateZ="100" className="w-full mt-4">
+                    <CardContainer className="inter-var">
+                        <CardBody className="bg-neutral-950/60 backdrop-blur-md relative group/card  dark:hover:shadow-2xl dark:hover:shadow-amber-500/[0.1] dark:border-white/[0.2] border-white/[0.1] w-full h-auto rounded-xl p-6 border  ">
+                            <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
                                     src="/images/vision.png"
                                     height="1000"
@@ -74,9 +74,9 @@ export const AboutSection = () => {
                     </CardContainer>
 
                     {/* Card 3: Community */}
-                     <CardContainer className="inter-var">
-                        <CardBody className="bg-white dark:bg-black relative group/card  dark:hover:shadow-2xl dark:hover:shadow-blue-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border  ">
-                             <CardItem translateZ="100" className="w-full mt-4">
+                    <CardContainer className="inter-var">
+                        <CardBody className="bg-neutral-950/60 backdrop-blur-md relative group/card  dark:hover:shadow-2xl dark:hover:shadow-blue-500/[0.1] dark:border-white/[0.2] border-white/[0.1] w-full h-auto rounded-xl p-6 border  ">
+                            <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
                                     src="/images/community.png"
                                     height="1000"

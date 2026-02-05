@@ -1,10 +1,10 @@
 "use client";
-import React from "react";
-import Orb from "@/components/Orb";
+import React, { useEffect, useState } from "react";
+
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useTheme } from "@/components/theme-provider";
-import { useEffect, useState } from "react";
+
 
 export const HeroSection = () => {
   const { theme } = useTheme();
@@ -14,12 +14,20 @@ export const HeroSection = () => {
     setMounted(true);
   }, []);
 
-  const orbColor = mounted && theme === "dark" ? "#000000" : "#ffffff";
+  const isDark = mounted && theme === "dark";
+
+  // Agriculture-themed colors
+  // Dark: Deep forest/emerald greens
+  // Light: Fresh/minty greens
+  const grainientColors = isDark
+    ? { color1: "#14532d", color2: "#166534", color3: "#15803d" } // green-900, green-800, green-700
+    : { color1: "#dcfce7", color2: "#bbf7d0", color3: "#86efac" }; // green-100, green-200, green-300
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-neutral-50 dark:bg-black">
-      <div className="absolute inset-x-0 top-0 h-full w-full z-0 opacity-50 dark:opacity-70">
-        <Orb hue={120} hoverIntensity={0.5} rotateOnHover={true} backgroundColor={orbColor} />
+    <div className="relative w-full h-screen overflow-hidden">
+      <div className="absolute inset-0 h-full w-full z-0">
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-transparent" />
       </div>
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
@@ -31,11 +39,11 @@ export const HeroSection = () => {
         }}
         className="relative z-10 flex flex-col gap-4 items-center justify-center px-4 md:px-10 text-center h-full"
       >
-        <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
+        <div className="text-3xl md:text-7xl font-bold text-center text-[#f0fff4] drop-shadow-sm">
           Smart Farming for a <br />
-          <span className="text-green-600 dark:text-green-400">Better Future.</span>
+          <span className="text-green-700 dark:text-green-400 drop-shadow-sm">Better Future.</span>
         </div>
-        <div className="font-light text-base md:text-2xl text-neutral-600 dark:text-neutral-300 py-4 max-w-3xl">
+        <div className="font-light text-base md:text-2xl text-neutral-800 dark:text-neutral-200 py-4 max-w-3xl drop-shadow-sm">
           Empowering Indian farmers with AI-driven insights. Detect pests, analyze soil, and get real-time market prices instantly.
         </div>
 
@@ -51,7 +59,7 @@ export const HeroSection = () => {
           </Link>
           <Link
             href="#features"
-            className="px-8 py-3 rounded-full bg-white dark:bg-neutral-800 text-black dark:text-white border border-neutral-200 dark:border-neutral-700 font-semibold hover:shadow-xl transition-shadow duration-300"
+            className="px-8 py-3 rounded-full bg-white/80 dark:bg-neutral-800/80 backdrop-blur-sm text-black dark:text-white border border-neutral-200 dark:border-neutral-700 font-semibold hover:shadow-xl transition-shadow duration-300"
           >
             Learn More
           </Link>

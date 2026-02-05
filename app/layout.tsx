@@ -49,8 +49,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AuthProvider>
-          <ThemeProvider defaultTheme="light">
-             {children}
+          <ThemeProvider defaultTheme="dark" storageKey="agronova-dark-theme">
+            {children}
           </ThemeProvider>
           <Toaster />
         </AuthProvider>

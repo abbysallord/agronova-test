@@ -4,13 +4,13 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export const CommunitySection = () => {
   return (
-    <div id="testimonials" className="h-[40rem] flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-white/50 dark:bg-black/50 z-0" />
+    <div id="testimonials" className="h-[40rem] flex flex-col antialiased bg-transparent items-center justify-center relative overflow-hidden">
+
       <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 text-neutral-900 dark:text-white z-10 relative">
-          Trusted by Farmers
+        Trusted by Farmers
       </h2>
       <p className="text-center text-neutral-500 mb-12 max-w-2xl px-4 z-10 relative">
-          Join a growing community of farmers who are using technology to transform their agriculture.
+        Join a growing community of farmers who are using technology to transform their agriculture.
       </p>
       <InfiniteMovingCards
         items={testimonials}

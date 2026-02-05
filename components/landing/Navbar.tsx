@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
+
 import {
   Navbar as ResizableNavbar,
   NavBody,
@@ -55,7 +55,7 @@ export const Navbar = () => {
               Get Started
             </NavbarButton>
           </Link>
-          <ThemeToggle />
+
         </div>
       </NavBody>
 
@@ -84,7 +84,7 @@ export const Navbar = () => {
               </NavbarButton>
             </Link>
             <div className="flex justify-start py-2">
-              <ThemeToggle />
+
             </div>
           </div>
         </MobileNavMenu>
