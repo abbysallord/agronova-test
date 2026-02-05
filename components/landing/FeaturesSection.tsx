@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import {
   IconLeaf,
@@ -11,11 +11,54 @@ import {
   IconAnalyze,
 } from "@tabler/icons-react";
 import Image from "next/image";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const FeaturesSection = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLDivElement>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(() => {
+    // Header Animation
+    gsap.from(headerRef.current, {
+      scrollTrigger: {
+        trigger: headerRef.current,
+        start: "top 80%",
+      },
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+    });
+
+    // Grid Items Animation (Staggered)
+    if (gridRef.current) {
+      // Select all direct children (BentoGridItem wrappers)
+      // Since BentoGridItem renders a div, we can target them via class or direct children
+      const items = gridRef.current.children;
+
+      gsap.from(items, {
+        scrollTrigger: {
+          trigger: gridRef.current,
+          start: "top 75%",
+        },
+        y: 100,
+        opacity: 0,
+        scale: 0.9,
+        duration: 0.8,
+        stagger: 0.1,
+        ease: "back.out(1.7)", // "Pop" effect
+      });
+    }
+  }, { scope: containerRef });
+
   return (
-    <div id="features" className="py-20 lg:py-32 bg-transparent relative z-20">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-16 text-center">
+    <div ref={containerRef} id="features" className="py-20 lg:py-32 bg-transparent relative z-20">
+      <div ref={headerRef} className="max-w-7xl mx-auto px-6 lg:px-8 mb-16 text-center">
         <h2 className="text-3xl font-bold tracking-tight text-neutral-900 dark:text-white sm:text-5xl">
           Everything You Need to GroW
         </h2>
@@ -23,19 +66,21 @@ export const FeaturesSection = () => {
           Discover a suite of powerful tools designed to help Indian farmers prosper.
         </p>
       </div>
-      <BentoGrid className="max-w-6xl mx-auto md:auto-rows-[25rem]">
-        {items.map((item, i) => (
-          <BentoGridItem
-            key={i}
-            title={item.title}
-            description={item.description}
-            header={item.header}
-            icon={item.icon}
-            className={item.className}
-            href={item.href}
-          />
-        ))}
-      </BentoGrid>
+      <div ref={gridRef}>
+        <BentoGrid className="max-w-6xl mx-auto md:auto-rows-[25rem]">
+          {items.map((item, i) => (
+            <BentoGridItem
+              key={i}
+              title={item.title}
+              description={item.description}
+              header={item.header}
+              icon={item.icon}
+              className={item.className}
+              href={item.href}
+            />
+          ))}
+        </BentoGrid>
+      </div>
     </div>
   );
 };
