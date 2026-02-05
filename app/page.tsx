@@ -5,6 +5,7 @@ import { CommunitySection } from "@/components/landing/CommunitySection";
 import { AboutSection } from "@/components/landing/AboutSection";
 import { Footer } from "@/components/landing/Footer";
 import Grainient from "@/components/Grainient";
+import GradualBlur from "@/components/GradualBlur";
 
 export default function Home() {
   const forestGreenTheme = {
@@ -24,6 +25,14 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/40 pointer-events-none" />
       </div>
+
+      <GradualBlur
+        className="z-[5] pointer-events-none"
+        preset="subtle"
+        position="bottom"
+        target="page"
+        opacity={0.6}
+      />
 
       <Navbar />
       <HeroSection />
