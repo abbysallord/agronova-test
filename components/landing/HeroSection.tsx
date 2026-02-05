@@ -26,13 +26,13 @@ export const HeroSection = () => {
     : { color1: "#dcfce7", color2: "#bbf7d0", color3: "#86efac" }; // green-100, green-200, green-300
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full min-h-screen overflow-hidden flex flex-col">
       <div className="absolute inset-0 h-full w-full z-0">
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-transparent" />
       </div>
 
-      <div className="container mx-auto px-4 md:px-10 h-full flex items-center relative z-10">
+      <div className="container mx-auto px-4 md:px-10 flex-grow flex items-center relative z-10 pt-32 lg:pt-0">
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
