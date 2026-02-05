@@ -1,4 +1,3 @@
-import { Mistral } from "@mistralai/mistralai";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
@@ -11,28 +10,16 @@ export async function POST(req: Request) {
     }
 
     if (!process.env.MISTRAL_API_KEY) {
-        console.error("MISTRAL_API_KEY is missing");
-        return NextResponse.json(
-            { error: "Configuration Error: MISTRAL_API_KEY is missing in environment variables. Please add it to your Vercel Project Settings." },
-            { status: 500 }
-        );
+      console.error("MISTRAL_API_KEY is missing");
+      return NextResponse.json(
+        { error: "Configuration Error: MISTRAL_API_KEY is missing in environment variables." },
+        { status: 500 }
+      );
     }
     const arrayBuffer = await file.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
     const base64Image = buffer.toString("base64");
     const dataUrl = `data:${file.type};base64,${base64Image}`;
-
-    if (!process.env.MISTRAL_API_KEY) {
-        console.error("MISTRAL_API_KEY is missing");
-        return NextResponse.json(
-            { error: "Configuration Error: MISTRAL_API_KEY is missing in environment variables. Please add it to your Vercel Project Settings." },
-            { status: 500 }
-        );
-    }
-
-    const client = new Mistral({
-      apiKey: process.env.MISTRAL_API_KEY,
-    });
 
     const prompt = `Analyze this crop image for pests or diseases. 
     Return ONLY a valid JSON object with the following structure (do NOT include markdown formatting like \`\`\`json):
@@ -52,44 +39,55 @@ export async function POST(req: Request) {
     If the image is not a plant/crop, return {"error": "Not a crop image"}.
     IMPORTANT: Write for a farmer. Use simple, clear, and encouraging language. Avoid overly complex jaragon. be detailed but easy to understand.`;
 
-    const response = await client.chat.complete({
-      model: "pixtral-12b-2409",
-      messages: [
-        {
-          role: "user",
-          content: [
-            { type: "text", text: prompt },
-            { 
-                type: "image_url", 
-                imageUrl: dataUrl 
-            },
-          ],
-        },
-      ],
-      responseFormat: { type: "json_object" },
+    const response = await fetch("https://api.mistral.ai/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${process.env.MISTRAL_API_KEY}`
+      },
+      body: JSON.stringify({
+        model: "pixtral-12b-2409",
+        messages: [
+          {
+            role: "user",
+            content: [
+              { type: "text", text: prompt },
+              { type: "image_url", imageUrl: dataUrl }
+            ]
+          }
+        ],
+        response_format: { type: "json_object" }
+      })
     });
 
-    const content = response.choices?.[0]?.message?.content;
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error("Mistral API Error:", response.status, errorText);
+      throw new Error(`Mistral API Error: ${response.status} ${response.statusText}`);
+    }
+
+    const data = await response.json();
+    const content = data.choices?.[0]?.message?.content;
 
     if (!content) {
-        throw new Error("No content received from AI");
+      throw new Error("No content received from AI");
     }
 
     try {
-        // Sometimes models wrap in markdown despite instructions, so we clean it just in case
-        const cleanText = (content as string).replace(/```json/g, '').replace(/```/g, '').trim();
-        const jsonResponse = JSON.parse(cleanText);
-        return NextResponse.json(jsonResponse);
+      // Sometimes models wrap in markdown despite instructions, so we clean it just in case
+      const cleanText = (content as string).replace(/```json/g, '').replace(/```/g, '').trim();
+      const jsonResponse = JSON.parse(cleanText);
+      return NextResponse.json(jsonResponse);
     } catch (e) {
-        console.error("JSON Parse Error:", content);
-        return NextResponse.json({ error: "Failed to parse AI response", details: content }, { status: 500 });
+      console.error("JSON Parse Error:", content);
+      return NextResponse.json({ error: "Failed to parse AI response", details: content }, { status: 500 });
     }
 
   } catch (error: any) {
     console.error("Analysis Error:", error);
-    return NextResponse.json({ 
-        error: error.message || "Internal Server Error", 
-        details: error.toString() 
+    return NextResponse.json({
+      error: error.message || "Internal Server Error",
+      details: error.toString()
     }, { status: 500 });
   }
 }
