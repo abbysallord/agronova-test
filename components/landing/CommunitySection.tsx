@@ -4,7 +4,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export const CommunitySection = () => {
   return (
-    <div id="testimonials" className="h-[40rem] flex flex-col antialiased bg-transparent items-center justify-center relative overflow-hidden">
+    <div id="testimonials" className="min-h-screen flex flex-col antialiased bg-transparent items-center justify-center relative overflow-hidden py-20">
 
       <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 text-neutral-900 dark:text-white z-10 relative">
         Trusted by Farmers
@@ -12,6 +12,7 @@ export const CommunitySection = () => {
       <p className="text-center text-neutral-500 mb-12 max-w-2xl px-4 z-10 relative">
         Join a growing community of farmers who are using technology to transform their agriculture.
       </p>
+
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
