@@ -28,16 +28,19 @@ export async function POST(req: Request) {
       "crop": "Name of crop",
       "confidence": "e.g. 95%",
       "severity": "Low | Moderate | High | Critical | None",
-      "symptoms": "Detailed explanation of symptoms in simple, farmer-friendly language. Explain WHY this is happening.",
+      "symptoms": ["Symptom 1", "Symptom 2"],
       "cure": {
-        "chemical": "Detailed step-by-step chemical treatment instructions. Include dosage if applicable.",
-        "organic": "Detailed organic or home-remedy treatment steps. Explain how to prepare and apply."
+        "chemical": ["Step 1", "Step 2", "Step 3"],
+        "organic": ["Step 1", "Step 2", "Step 3"]
       },
-      "prevention": "Comprehensive list of prevention tips for future seasons. Write as a simple paragraph.",
+      "prevention": ["Tip 1", "Tip 2", "Tip 3"],
       "type": "disease | healthy"
     }
     If the image is not a plant/crop, return {"error": "Not a crop image"}.
-    IMPORTANT: Write for a farmer. Use simple, clear, and encouraging language. Avoid overly complex jaragon. be detailed but easy to understand.`;
+    IMPORTANT: Provide concise short sentences. Return strict JSON arrays for lists.
+    }
+    If the image is not a plant/crop, return {"error": "Not a crop image"}.
+    IMPORTANT: Write for a farmer. Use simple, clear, and encouraging language. Keep text SHORT and easy to read. Avoid large blocks of text.`;
 
     const response = await fetch("https://api.mistral.ai/v1/chat/completions", {
       method: "POST",
@@ -52,7 +55,7 @@ export async function POST(req: Request) {
             role: "user",
             content: [
               { type: "text", text: prompt },
-              { type: "image_url", imageUrl: dataUrl }
+              { type: "image_url", image_url: { url: dataUrl } }
             ]
           }
         ],
