@@ -15,10 +15,10 @@ export const Footer = () => {
             Empowering farmers with AI-driven intelligence. Join us in revolutionizing Indian agriculture through technology and community.
           </p>
           <div className="mt-8 flex gap-5">
-            <a href="https://www.instagram.com/conqueror.core/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
+            <a href="https://www.instagram.com/agronova.buisness.co?igsh=YzZ5MXluOHhtN2Iw" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
               <IconBrandInstagram size={28} />
             </a>
-            <a href="https://www.linkedin.com/in/dhanush-shenoy-h/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">
+            <a href="https://www.linkedin.com/company/agronova-app/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">
               <IconBrandLinkedin size={28} />
             </a>
           </div>
