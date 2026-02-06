@@ -34,15 +34,17 @@ export async function POST(req: Request) {
         - Moisture: ${moisture}%
         - Color: ${color}
 
-        Return a specific, helpful report for the farmer in JSON format:
+        Return a specific, helpful report for the farmer in JSON format.
+        IMPORTANT: All text fields should be formatted as concise bullet points or short, punchy sentences. Do not use long paragraphs.
+        
         {
             "soil_type": "Scientific name (e.g., Silty Loam)",
-            "description": "Simple explanation of what this soil means for their farm.",
+            "description": "Brief 2-3 sentence overview of this soil's potential.",
             "suitable_crops": ["List", "of", "5", "best", "crops"],
             "needs_water": "High | Medium | Low",
-            "irrigation_advice": "Specific advice on how/when to water.",
-            "fertilizer_recommendation": "Specific organic and chemical fertilizers to balance the nutrients.",
-            "improvement_tips": "2-3 actionable tips to improve soil quality."
+            "irrigation_advice": "Point-wise advice on watering schedule.",
+            "fertilizer_recommendation": "Point-wise list of organic/chemical fertilizers.",
+            "improvement_tips": "Point-wise list of actionable improvements."
         }
         Keep language simple, encouraging, and farmer-friendly.`;
 
@@ -60,17 +62,19 @@ export async function POST(req: Request) {
             const dataUrl = `data:${file.type};base64,${base64Image}`;
 
             prompt = `Analyze this soil image. First, strictly verify if this is an image of soil, dirt, or farmland.
-        If the image is NOT soil (e.g., fruit, vegetable, animal, person, object), return ONLY this JSON: {"error": "Not a soil image. Please upload a clear photo of soil or farmland."}
+        If the image is NOT soil, return ONLY this JSON: {"error": "Not a soil image. Please upload a clear photo of soil/farmland."}
         
-        If it IS soil, identify the soil type and return a helpful report for a farmer in JSON format:
+        If it IS soil, return a helpful report in JSON format.
+        IMPORTANT: All text fields should be formatted as concise bullet points or short, punchy sentences. Do not use long paragraphs.
+
         {
-            "soil_type": "Visual identification (e.g. Red Clay, Black Cotton Soil)",
-            "description": "Explanation of the soil's visible properties.",
+            "soil_type": "Visual identification (e.g. Red Clay)",
+            "description": "Brief overview of visible properties.",
             "suitable_crops": ["List", "of", "5", "best", "crops"],
             "needs_water": "High | Medium | Low",
-            "irrigation_advice": "Advice based on likely water retention.",
-            "fertilizer_recommendation": "General fertilizer advice for this soil type.",
-            "improvement_tips": "Tips to manage this specific soil structure."
+            "irrigation_advice": "Point-wise advice on watering.",
+            "fertilizer_recommendation": "Point-wise fertilizer advice.",
+            "improvement_tips": "Point-wise improvement tips."
         }
         Keep language simple.`;
 
