@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="bg-black/80 backdrop-blur-md text-neutral-400 py-16 border-t border-neutral-800">
+    <footer className="relative z-50 bg-black/80 backdrop-blur-md text-neutral-400 py-16 border-t border-neutral-800">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
 
         {/* Brand */}

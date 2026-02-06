@@ -165,13 +165,13 @@ export const FeaturesSection = () => {
       >
         {/* Intro */}
         <div className="w-full lg:w-screen lg:h-full flex flex-col justify-center items-center px-6 py-20 lg:p-20 z-10 shrink-0">
-          <h2 className="text-4xl lg:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-white/40 mb-6 lg:mb-8 max-w-4xl text-center leading-tight">
+          <h2 className="text-4xl lg:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-500 mb-6 lg:mb-8 max-w-4xl text-center leading-tight">
             Everything You Need <br className="hidden lg:block" /> to GroW.
           </h2>
-          <p className="text-lg lg:text-2xl text-neutral-300 max-w-2xl text-center leading-relaxed mb-8">
+          <p className="text-lg lg:text-2xl text-neutral-600 max-w-2xl text-center leading-relaxed mb-8">
             We've packed powerful tools into one seamless platform. <br className="hidden lg:block" />
-            <span className="text-green-400 font-semibold hidden lg:inline">Scroll to explore the ecosystem &rarr;</span>
-            <span className="text-green-400 font-semibold lg:hidden">Explore below &darr;</span>
+            <span className="text-green-600 font-semibold hidden lg:inline">Scroll to explore the ecosystem &rarr;</span>
+            <span className="text-green-600 font-semibold lg:hidden">Explore below &darr;</span>
           </p>
         </div>
 
@@ -183,7 +183,7 @@ export const FeaturesSection = () => {
             className="w-full lg:h-full lg:w-[45vw] flex items-center justify-center p-4 py-8 lg:p-12 relative group shrink-0"
           >
             <div className={cn(
-              "relative w-full max-w-md lg:max-w-xl p-8 lg:p-12 rounded-3xl border border-white/10 bg-black/40 backdrop-blur-xl transition-all duration-300 overflow-hidden opacity-100 visible", // Force visible via CSS
+              "relative w-full max-w-md lg:max-w-xl p-8 lg:p-12 rounded-3xl border border-green-900/10 bg-white/80 backdrop-blur-2xl transition-all duration-300 overflow-hidden opacity-100 visible shadow-xl shadow-green-900/5", // Force visible via CSS
               feature.border
             )}
               style={{ opacity: 1, visibility: 'visible' }} // Inline style safety net
@@ -196,13 +196,13 @@ export const FeaturesSection = () => {
               />
 
               <div className="relative z-10">
-                <div className="feature-icon mb-6 lg:mb-8 p-4 bg-white/5 rounded-2xl w-fit backdrop-blur-md border border-white/10">
+                <div className="feature-icon mb-6 lg:mb-8 p-4 bg-white rounded-2xl w-fit backdrop-blur-md border border-green-900/10 shadow-sm">
                   {feature.icon}
                 </div>
-                <h3 className="text-2xl lg:text-5xl font-bold text-white mb-4 lg:mb-6">
+                <h3 className="text-2xl lg:text-5xl font-bold text-neutral-900 mb-4 lg:mb-6">
                   {feature.title}
                 </h3>
-                <p className="text-base lg:text-xl text-neutral-300 leading-relaxed">
+                <p className="text-base lg:text-xl text-neutral-700 leading-relaxed font-medium">
                   {feature.description}
                 </p>
               </div>
@@ -213,7 +213,7 @@ export const FeaturesSection = () => {
         {/* Outro */}
         <div className="w-full lg:h-full lg:w-[80vw] flex flex-col justify-center items-center px-8 py-20 lg:py-0 shrink-0">
           <div className="text-center">
-            <h3 className="text-3xl lg:text-6xl font-bold text-white mb-8">
+            <h3 className="text-3xl lg:text-6xl font-bold text-neutral-900 mb-8">
               Ready to revolutionise<br /> your farm?
             </h3>
             <Link href="/signup">

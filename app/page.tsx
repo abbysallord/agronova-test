@@ -8,30 +8,31 @@ import Grainient from "@/components/Grainient";
 import GradualBlur from "@/components/GradualBlur";
 
 export default function Home() {
-  const forestGreenTheme = {
-    color1: "#14532d", // deep forest
-    color2: "#166534", // emerald
-    color3: "#15803d"  // green
+  const lightGreenTheme = {
+    color1: "#ffffff", // white
+    color2: "#dcfce7", // green-100
+    color3: "#f0fdf4"  // green-50
   };
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen text-neutral-900">
       {/* Global Fixed Background */}
       <div className="fixed inset-0 z-[-10]">
         <Grainient
-          {...forestGreenTheme}
+          {...lightGreenTheme}
           grainAmount={0.05}
           grainScale={1.5}
         />
-        <div className="absolute inset-0 bg-black/40 pointer-events-none" />
       </div>
 
       <GradualBlur
         className="z-[5] pointer-events-none"
-        preset="subtle"
         position="bottom"
         target="page"
-        opacity={0.6}
+        strength={2}
+        height="8rem"
+        opacity={0.8}
+        zIndex={-90}
       />
 
       <Navbar />

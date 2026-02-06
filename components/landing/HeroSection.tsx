@@ -21,9 +21,7 @@ export const HeroSection = () => {
   // Agriculture-themed colors
   // Dark: Deep forest/emerald greens
   // Light: Fresh/minty greens
-  const grainientColors = isDark
-    ? { color1: "#14532d", color2: "#166534", color3: "#15803d" } // green-900, green-800, green-700
-    : { color1: "#dcfce7", color2: "#bbf7d0", color3: "#86efac" }; // green-100, green-200, green-300
+  // Note: Background is handled in page.tsx
 
   return (
     <div className="relative w-full min-h-screen overflow-hidden flex flex-col">
@@ -45,11 +43,11 @@ export const HeroSection = () => {
         >
           {/* Left Column: Text */}
           <div className="flex flex-col gap-6 text-center lg:text-left">
-            <div className="text-3xl md:text-5xl lg:text-7xl font-bold text-[#f0fff4] drop-shadow-sm leading-tight">
+            <div className="text-3xl md:text-5xl lg:text-7xl font-bold text-neutral-900 drop-shadow-sm leading-tight">
               Smart Farming <br />
-              <span className="text-green-700 dark:text-green-400 drop-shadow-sm">for a Better Future.</span>
+              <span className="text-green-700 dark:text-green-600 drop-shadow-sm">for a Better Future.</span>
             </div>
-            <div className="font-light text-base md:text-xl text-neutral-200 py-4 max-w-2xl mx-auto lg:mx-0 drop-shadow-sm">
+            <div className="font-light text-base md:text-xl text-neutral-700 py-4 max-w-2xl mx-auto lg:mx-0 drop-shadow-sm">
               Empowering Indian farmers with AI-driven insights. Detect pests, analyze soil, and get real-time market prices instantly.
             </div>
 
@@ -65,7 +63,7 @@ export const HeroSection = () => {
               </Link>
               <Link
                 href="#features"
-                className="px-8 py-3 rounded-full bg-white/10 backdrop-blur-md text-white border border-white/20 font-semibold hover:bg-white/20 transition-all duration-300"
+                className="px-8 py-3 rounded-full bg-black/5 hover:bg-black/10 backdrop-blur-md text-neutral-900 border border-black/10 font-semibold transition-all duration-300"
               >
                 Learn More
               </Link>
