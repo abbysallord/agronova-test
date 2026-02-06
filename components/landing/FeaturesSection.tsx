@@ -85,7 +85,7 @@ export const FeaturesSection = () => {
     mm.add("(min-width: 1024px)", () => {
       // 1. Horizontal Scroll
       const scrollTween = gsap.to(trackRef.current, {
-        translateX: "-350vw",
+        translateX: "-370vw",
         ease: "none",
         scrollTrigger: {
           trigger: containerRef.current,
@@ -161,7 +161,7 @@ export const FeaturesSection = () => {
     <section ref={containerRef} className="relative overflow-hidden">
       <div
         ref={trackRef}
-        className="w-full lg:h-screen lg:w-[450vw] flex flex-col lg:flex-row relative"
+        className="w-full lg:h-screen lg:w-[470vw] flex flex-col lg:flex-row relative"
       >
         {/* Intro */}
         <div className="w-full lg:w-screen lg:h-full flex flex-col justify-center items-center px-6 py-20 lg:p-20 z-10 shrink-0">
@@ -211,7 +211,7 @@ export const FeaturesSection = () => {
         ))}
 
         {/* Outro */}
-        <div className="w-full lg:h-full lg:w-[80vw] flex flex-col justify-center items-center px-8 py-20 lg:py-0 shrink-0">
+        <div className="w-full lg:h-full lg:w-screen flex flex-col justify-center items-center px-8 py-20 lg:py-0 shrink-0">
           <div className="text-center">
             <h3 className="text-3xl lg:text-6xl font-bold text-neutral-900 mb-8">
               Ready to revolutionise<br /> your farm?
