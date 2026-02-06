@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const DATA_DIR = 'c:/Users/Dhanush/agronova/data'; // path.join(process.cwd(), 'data');
+const DATA_DIR = path.join(process.cwd(), 'data');
 const ORDERS_FILE = path.join(DATA_DIR, 'orders.json');
 const USERS_FILE = path.join(DATA_DIR, 'users.json');
 
@@ -61,7 +61,7 @@ function writeJSON(file: string, data: any) {
 
 export const dbOrders = {
     getAll: () => readJSON<Order[]>(ORDERS_FILE, []),
-    
+
     getById: (id: string) => {
         const orders = readJSON<Order[]>(ORDERS_FILE, []);
         return orders.find(o => o.id === id);
@@ -78,7 +78,7 @@ export const dbOrders = {
         const orders = readJSON<Order[]>(ORDERS_FILE, []);
         const index = orders.findIndex(o => o.id === id);
         if (index === -1) return null;
-        
+
         orders[index] = { ...orders[index], ...updates };
         writeJSON(ORDERS_FILE, orders);
         return orders[index];
@@ -100,11 +100,11 @@ export const dbUsers = {
         const users = readJSON<User[]>(USERS_FILE, []);
         let user = users.find(u => u.email === userData.email);
         if (!user) {
-            user = { 
-                email: userData.email, 
-                strikes: [], 
+            user = {
+                email: userData.email,
+                strikes: [],
                 status: 'CLEAR',
-                name: userData.name || userData.email.split('@')[0], 
+                name: userData.name || userData.email.split('@')[0],
                 role: userData.role || 'Farmer',
                 followers: userData.followers || [],
                 following: userData.following || []
@@ -119,12 +119,12 @@ export const dbUsers = {
     addStrike: (email: string, reason: string, orderId: string) => {
         const users = readJSON<User[]>(USERS_FILE, []);
         const index = users.findIndex(u => u.email === email);
-        
+
         if (index === -1) {
             // Create user if not exists
-            const newUser: User = { 
-                email, 
-                strikes: [{ id: Date.now().toString(), date: new Date().toISOString(), reason, orderId, active: true }], 
+            const newUser: User = {
+                email,
+                strikes: [{ id: Date.now().toString(), date: new Date().toISOString(), reason, orderId, active: true }],
                 status: 'CLEAR' // Will update below
             };
             users.push(newUser);
@@ -142,17 +142,17 @@ export const dbUsers = {
     },
 
     removeStrike: (email: string, strikeId: string) => {
-         const users = readJSON<User[]>(USERS_FILE, []);
-         const user = users.find(u => u.email === email);
-         if (!user) return null;
+        const users = readJSON<User[]>(USERS_FILE, []);
+        const user = users.find(u => u.email === email);
+        if (!user) return null;
 
-         const strike = user.strikes.find(s => s.id === strikeId);
-         if (strike) {
-             strike.active = false; // Soft delete
-             updateUserStatus(user);
-             writeJSON(USERS_FILE, users);
-         }
-         return user;
+        const strike = user.strikes.find(s => s.id === strikeId);
+        if (strike) {
+            strike.active = false; // Soft delete
+            updateUserStatus(user);
+            writeJSON(USERS_FILE, users);
+        }
+        return user;
     }
 };
 
@@ -264,10 +264,10 @@ export const dbPosts = {
     delete: (postId: string, userEmail: string) => {
         const safeEmail = userEmail?.toLowerCase().trim();
         console.log(`[DB] Request Delete Post ${postId} by ${safeEmail}`);
-        
+
         let posts = readJSON<Post[]>(POSTS_FILE, []);
         const post = posts.find(p => p.id === postId);
-        
+
         if (!post) {
             console.log(`[DB] Post ${postId} not found.`);
             return false;
@@ -280,7 +280,7 @@ export const dbPosts = {
             console.log(`[DB] Unauthorized delete attempt.`);
             return false;
         }
-        
+
         posts = posts.filter(p => p.id !== postId);
         console.log(`[DB] Writing ${posts.length} posts to file.`);
         writeJSON(POSTS_FILE, posts);
@@ -319,7 +319,7 @@ export const dbSocial = {
         const users = readJSON<User[]>(USERS_FILE, []);
         const user = users.find(u => u.email === userEmail);
         const target = users.find(u => u.email === targetEmail);
-        
+
         if (!user || !target) return false;
 
         if (!user.following) user.following = [];
@@ -341,7 +341,7 @@ export const dbSocial = {
 
     getMessages: (userEmail: string) => {
         let msgs = readJSON<Message[]>(MESSAGES_FILE, []);
-        
+
         // Auto-Delete > 24h
         const now = Date.now();
         const ONE_DAY = 24 * 60 * 60 * 1000;
@@ -351,7 +351,7 @@ export const dbSocial = {
         if (msgs.length !== initialLen) writeJSON(MESSAGES_FILE, msgs);
 
         return msgs.filter(m => m.sender === userEmail || m.receiver === userEmail)
-                   .sort((a,b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime());
+            .sort((a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime());
     },
 
     sendMessage: (sender: string, receiver: string, content: string, replyToId?: string) => {
@@ -401,7 +401,7 @@ export const dbSocial = {
         if (!msg.reactions) msg.reactions = {};
         if (msg.reactions[userEmail] === emoji) delete msg.reactions[userEmail];
         else msg.reactions[userEmail] = emoji;
-        
+
         writeJSON(MESSAGES_FILE, msgs);
         return msg;
     }
