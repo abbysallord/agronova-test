@@ -261,6 +261,21 @@ export const dbPosts = {
         return post;
     },
 
+    editComment: (postId: string, commentId: string, userEmail: string, newText: string) => {
+        const posts = readJSON<Post[]>(POSTS_FILE, []);
+        const post = posts.find(p => p.id === postId);
+        if (!post) return null;
+
+        const comment = post.comments.find(c => c.id === commentId);
+        if (!comment) return null;
+
+        if (comment.userEmail.toLowerCase().trim() !== userEmail.toLowerCase().trim()) return null; // Unauthorized
+
+        comment.text = newText;
+        writeJSON(POSTS_FILE, posts);
+        return post;
+    },
+
     delete: (postId: string, userEmail: string) => {
         const safeEmail = userEmail?.toLowerCase().trim();
         console.log(`[DB] Request Delete Post ${postId} by ${safeEmail}`);
