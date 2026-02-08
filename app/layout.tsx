@@ -45,7 +45,13 @@ export default function RootLayout({
         className={`${montserrat.variable} ${montserrat.className} antialiased font-sans`}
       >
         <AuthProvider>
-          <ThemeProvider defaultTheme="dark" storageKey="agronova-dark-theme">
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+            storageKey="agronova-dark-theme"
+          >
             {children}
           </ThemeProvider>
           <Toaster />

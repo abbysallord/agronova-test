@@ -17,7 +17,12 @@ export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Features", link: "#features" },
+    {
+      name: "Features", link: "#features", onClick: (e: React.MouseEvent) => {
+        e.preventDefault();
+        document.getElementById("features")?.scrollIntoView({ behavior: "smooth" });
+      }
+    },
     { name: "Community", link: "#testimonials" },
     { name: "About Us", link: "#about" },
   ];
@@ -68,7 +73,17 @@ export const Navbar = () => {
         </MobileNavHeader>
         <MobileNavMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)}>
           {navItems.map((item, idx) => (
-            <Link key={idx} href={item.link} className="text-neutral-800 hover:text-black font-semibold block w-full py-2" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link
+              key={idx}
+              href={item.link}
+              className="text-neutral-800 hover:text-black font-semibold block w-full py-2"
+              onClick={(e) => {
+                if (item.onClick) {
+                  item.onClick(e);
+                }
+                setIsMobileMenuOpen(false);
+              }}
+            >
               {item.name}
             </Link>
           ))}

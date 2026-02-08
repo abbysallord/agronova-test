@@ -63,6 +63,10 @@ export const HeroSection = () => {
               </Link>
               <Link
                 href="#features"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("features")?.scrollIntoView({ behavior: "smooth" });
+                }}
                 className="px-8 py-3 rounded-full bg-black/5 hover:bg-black/10 backdrop-blur-md text-neutral-900 border border-black/10 font-semibold transition-all duration-300"
               >
                 Learn More

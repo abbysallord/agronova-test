@@ -158,7 +158,7 @@ export const FeaturesSection = () => {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="relative overflow-hidden">
+    <section id="features" ref={containerRef} className="relative overflow-hidden">
       <div
         ref={trackRef}
         className="w-full lg:h-screen lg:w-[470vw] flex flex-col lg:flex-row relative"
