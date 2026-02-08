@@ -18,11 +18,6 @@ export default function SoilAnalysisPage() {
             value: "manual",
             content: <ManualInputForm />,
         },
-        {
-            title: "Image Upload",
-            value: "image",
-            content: <ImageUploadForm />,
-        },
     ];
 
     return (
@@ -32,7 +27,7 @@ export default function SoilAnalysisPage() {
                     Soil Health Analysis
                 </h2>
                 <p className="text-neutral-500 dark:text-neutral-400 mt-2">
-                    Get detailed insights about your soil health using AI. Enter specific data or upload an image for instant analysis.
+                    Get detailed insights about your soil health using AI. Enter specific data for instant analysis.
                 </p>
             </div>
 
@@ -160,91 +155,7 @@ const ManualInputForm = () => {
     );
 };
 
-const ImageUploadForm = () => {
-    const [files, setFiles] = useState<File[]>([]);
-    const [analyzing, setAnalyzing] = useState(false);
-    const [result, setResult] = useState<any>(null);
 
-    const handleAnalyze = async () => {
-        if (!files || files.length === 0) {
-            toast.error("Please upload an image first.");
-            return;
-        }
-
-        const file = files[0];
-        if (!file.type.startsWith("image/")) {
-            toast.error("Invalid file type. Please upload an image.");
-            return;
-        }
-
-        setAnalyzing(true);
-        setResult(null);
-
-        const formData = new FormData();
-        formData.append("image", file);
-        formData.append("type", "image");
-
-        try {
-            const response = await fetch("/api/analyze-soil", {
-                method: "POST",
-                body: formData,
-            });
-            const data = await response.json();
-
-            if (data.error) throw new Error(data.error);
-            if (!response.ok) throw new Error("Analysis failed. Please try again.");
-
-            setResult(data);
-            toast.success("Image Analysis Complete!");
-        } catch (error: any) {
-            console.error("Upload Error:", error);
-            toast.error(error.message || "Failed to analyze image");
-        } finally {
-            setAnalyzing(false);
-        }
-    };
-
-    if (result) {
-        return <AnalysisResult result={result} onReset={() => { setResult(null); setFiles([]); }} />;
-    }
-
-    return (
-        <div className="w-full p-6 md:p-12 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-3xl shadow-xl min-h-[600px] flex flex-col gap-8">
-            <div className="max-w-xl mx-auto w-full space-y-10 mt-12">
-                <div className="text-center space-y-2">
-                    <h3 className="text-2xl font-bold text-neutral-800 dark:text-neutral-100">Upload Soil Sample</h3>
-                    <p className="text-neutral-500">Take a clear photo of your soil for instant AI analysis.</p>
-                </div>
-
-                <div className="border-2 border-dashed border-neutral-200 dark:border-neutral-700 rounded-2xl bg-neutral-50 dark:bg-neutral-900/50 p-2 hover:border-amber-500/50 transition-colors">
-                    <FileUpload onChange={setFiles} />
-                </div>
-
-                <div className="flex justify-center">
-                    <HoverBorderGradient
-                        containerClassName="rounded-full"
-                        as="button"
-                        className="bg-black text-white flex items-center space-x-2 px-10 py-4 text-lg font-medium"
-                        onClick={handleAnalyze}
-                        disabled={files.length === 0 || analyzing}
-                    >
-                        {analyzing ? (
-                            <>
-                                <IconLoader className="animate-spin" />
-                                <span>Scanning Soil Structure...</span>
-                            </>
-                        ) : (
-                            <>
-                                <IconAnalyze className="w-5 h-5" />
-                                <span>Analyze Soil Image</span>
-                            </>
-                        )}
-                    </HoverBorderGradient>
-                </div>
-            </div>
-        </div>
-    );
-};
 
 const AnalysisResult = ({ result, onReset }: { result: any, onReset: () => void }) => {
     const [selectedItem, setSelectedItem] = useState<{ title: string, content: any, type: 'success' | 'warning' | 'info' | 'danger' } | null>(null);
