@@ -9,27 +9,9 @@ import {
 } from "@tabler/icons-react";
 import { useAuth } from "@/context/AuthContext";
 
-// Placeholder widgets for now - can be expanded later
-const MarketplaceWidget = () => (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800 p-4 flex-col justify-end">
-        <div className="font-bold text-lg text-neutral-600 dark:text-neutral-300">Fresh Produce</div>
-        <div className="text-sm text-neutral-500 dark:text-neutral-400">Direct from farmers near you</div>
-    </div>
-);
-
-const CommunityWidget = () => (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800 p-4 flex-col justify-end">
-        <div className="font-bold text-lg text-neutral-600 dark:text-neutral-300">Community Forum</div>
-        <div className="text-sm text-neutral-500 dark:text-neutral-400">Join 120+ discussions</div>
-    </div>
-);
-
-const EducationWidget = () => (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800 p-4 flex-col justify-end">
-        <div className="font-bold text-lg text-neutral-600 dark:text-neutral-300">Seasonal Guide</div>
-        <div className="text-sm text-neutral-500 dark:text-neutral-400">Discover what's in season</div>
-    </div>
-);
+import { MarketplaceWidget } from "@/components/dashboard/widgets/MarketplaceWidget";
+import { CommunityWidget } from "@/components/dashboard/widgets/CommunityWidget";
+import { EducationWidget } from "@/components/dashboard/widgets/EducationWidget";
 
 export default function UserDashboardPage() {
     const { user } = useAuth();
