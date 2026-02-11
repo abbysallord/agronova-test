@@ -31,6 +31,8 @@ model User {
   // JSON fields for simple arrays
   followers String? // JSON string
   following String? // JSON string
+
+  products  Product[] // Relation to products sold by farmer
 }
 
 model Strike {
@@ -107,4 +109,21 @@ model Message {
   replyToId String?
   edited    Boolean @default(false)
   reactions String? // JSON string
+}
+
+model Product {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  price       Float
+  unit        String   @default("kg") 
+  image       String?
+  category    String?
+  sellerVpa   String?
+  available   Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  farmerId    String
+  farmer      User     @relation(fields: [farmerId], references: [id])
 }
