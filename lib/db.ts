@@ -248,12 +248,26 @@ export const dbPosts = {
 
     toggleLike: async (postId: string, userEmail: string) => {
         const post = await prisma.post.findUnique({ where: { id: postId } });
-        if (!post) return null;
+        if (!post) {
+            console.log("[DB] Post not found for like toggle:", postId);
+            return null;
+        }
 
-        let likes: string[] = post.likes ? JSON.parse(post.likes) : [];
+        let likes: string[] = [];
+        try {
+            likes = post.likes ? JSON.parse(post.likes) : [];
+        } catch (e) {
+            console.error("Error parsing likes JSON:", e);
+            likes = [];
+        }
+
         const idx = likes.indexOf(userEmail);
+        const originalLikes = [...likes];
+
         if (idx === -1) likes.push(userEmail);
         else likes.splice(idx, 1);
+
+        console.log(`[DB] Updating likes for ${postId}. Old: ${originalLikes.length}, New: ${likes.length}`);
 
         await prisma.post.update({
             where: { id: postId },
